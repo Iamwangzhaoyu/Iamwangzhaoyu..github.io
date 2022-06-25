@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Interview questions |  我的博客</title>
+      <title>Interview-Questions |  我的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/images/header.png" />
@@ -55,8 +55,8 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Interview-questions"
-  class="article article-type-post"
+  id="page-"
+  class="article article-type-page"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
@@ -66,44 +66,13 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Interview questions
+  Interview-Questions
 </h1>
  
 
       
     </header>
-     
-    <div class="article-meta">
-      <a href="/2022/06/25/Interview-questions/" class="article-date">
-  <time datetime="2022-06-25T12:38:09.000Z" itemprop="datePublished">2022-06-25</time>
-</a>   
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">22.6k</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">82 min</span>
-        </span>
-    </span>
-</div>
- 
-    </div>
-      
-    <div class="tocbot"></div>
-
-
-
-
-  
+       
     <div class="article-entry" itemprop="articleBody">
        
   <h1 id="面试题目录"><a href="#面试题目录" class="headerlink" title="面试题目录"></a>面试题目录</h1><h3 id="原型、原型链"><a href="#原型、原型链" class="headerlink" title="原型、原型链"></a>原型、原型链</h3><p>每个对象都会在其内部初始化一个属性，就是 prototype(原型)，当我们访问一个对 象的属性时，如果这个对象内部不存在这个属性，那么他就会去 prototype 里找这个 属性，这个 prototype 又会有自己的 prototype，于是就这样一直找下去，也就是我 们平时所说的原型链的概念。 关系：instance.constructor.prototype = instance.<strong>proto</strong><br>特点： JavaScript 对象是通过引用来传递的，我们创建的每个新对象实体中并没有一份属于 自己的原型副本。当我们修改原型时，与之相关的对象也会继承这一改变。 当我们需要一个属性的时，Javascript 引擎会先看当前对象中是否有这个属性， 如果 没有的话，就会查找他的 Prototype 对象是否有这个属性，如此递推下去，一直检索 到 Object 内建对象</p>
@@ -142,12 +111,9 @@
 <h3 id="Js异步的方法"><a href="#Js异步的方法" class="headerlink" title="Js异步的方法"></a>Js异步的方法</h3><p>回调函数<br>事件监听<br>发布/订阅<br>Promises 对象<br>Async 函数[ES7]</p>
 <h3 id="Js数组重排的算法"><a href="#Js数组重排的算法" class="headerlink" title="Js数组重排的算法"></a>Js数组重排的算法</h3><p>1，快速排序<br>从给定的数据中，随机抽出一项，这项的左边放所有比它小的，右边放比它大的，然 后再分别这两边执行上述操作，采用的是递归的思想，总结出来就是 实现一层，分 别给两边递归，设置好出口<br>2，插入排序<br>思想就是在已经排好序的数组中插入到相应的位置，以从小到大排序为例，扫描已经 排好序的片段的每一项，如大于，则继续往后，直到他小于一项时，将其插入到这项的前面<br>3，冒泡排序<br>故名思意 ，就是一个个冒泡到最前端或者最后端，主要是通过两两依次比较，以升序为例，如果前一项比后一项大则交换顺序，一直比到最后一对<br>4，选择排序<br>将当前未确定块的 min 或者 max 取出来插到最前面或者后面</p>
 <h3 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h3><p>图片懒加载的原理就是暂时不设置图片的 src 属性，而是将图片的 url 隐藏起来，比<br>如先写在 data-src 里面，等某些事件触发的时候(比如滚动到底部，点击加载图片)再<br>将图片真实的 url 放进 src 属性里面，从而实现图片的延迟加载<br>图片预加载是指在一些需要展示大量图片的网站，实现图片的提前加载。从而提升用<br>户体验。常用的方式有两种，一种是隐藏在 css 的 background 的 url 属性里面，一<br>种是通过 javascript 的 Image 对象设置实例对象的 src 属性实现图片的预加载。相关<br>代码如下：<br>CSS 预加载图片方式：</p>
-<p> preload-01 { background: url(<a target="_blank" rel="noopener" href="http://domain.tld/image-01.png">http://domain.tld/image-01.png</a>) no-repeat -</p>
-<p>9999px -9999px; }</p>
-<p>preload-02 { background: url(<a target="_blank" rel="noopener" href="http://domain.tld/image-02.png">http://domain.tld/image-02.png</a>) no-repeat -</p>
-<p>9999px -9999px; }</p>
-<p> preload-03 { background: url(<a target="_blank" rel="noopener" href="http://domain.tld/image-03.png">http://domain.tld/image-03.png</a>) no-repeat -</p>
-<p>9999px -9999px; }<br>Javascript 预加载图片的方式：<br>function preloadImg(url) {<br>var img = new Image();<br>img.src = url;<br>if(img.complete) {<br>//接下来可以使用图片了<br>//do something here<br>} else {<br>img.onload = function() {<br>//接下来可以使用图片了<br>//do something here<br>};<br>}<br>}</p>
+<h1 id="preload-01-background-url-http-domain-tld-image-01-png-no-repeat"><a href="#preload-01-background-url-http-domain-tld-image-01-png-no-repeat" class="headerlink" title="preload-01 { background: url(http://domain.tld/image-01.png) no-repeat -"></a>preload-01 { background: url(<a target="_blank" rel="noopener" href="http://domain.tld/image-01.png">http://domain.tld/image-01.png</a>) no-repeat -</h1><p>9999px -9999px; }</p>
+<h1 id="preload-02-background-url-http-domain-tld-image-02-png-no-repeat"><a href="#preload-02-background-url-http-domain-tld-image-02-png-no-repeat" class="headerlink" title="preload-02 { background: url(http://domain.tld/image-02.png) no-repeat -"></a>preload-02 { background: url(<a target="_blank" rel="noopener" href="http://domain.tld/image-02.png">http://domain.tld/image-02.png</a>) no-repeat -</h1><p>9999px -9999px; }</p>
+<h1 id="preload-03-background-url-http-domain-tld-image-03-png-no-repeat"><a href="#preload-03-background-url-http-domain-tld-image-03-png-no-repeat" class="headerlink" title="preload-03 { background: url(http://domain.tld/image-03.png) no-repeat -"></a>preload-03 { background: url(<a target="_blank" rel="noopener" href="http://domain.tld/image-03.png">http://domain.tld/image-03.png</a>) no-repeat -</h1><p>9999px -9999px; }<br>Javascript 预加载图片的方式：<br>function preloadImg(url) {<br>var img = new Image();<br>img.src = url;<br>if(img.complete) {<br>//接下来可以使用图片了<br>//do something here<br>} else {<br>img.onload = function() {<br>//接下来可以使用图片了<br>//do something here<br>};<br>}<br>}</p>
 <h3 id="AMD和COM的区别"><a href="#AMD和COM的区别" class="headerlink" title="AMD和COM的区别"></a>AMD和COM的区别</h3><p>AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。<br>CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。<br>对于依赖的模块，AMD 是提前执行，CMD 是延迟执行。不过 RequireJS 从 2.0 开 始，也改成可以延迟执行（根据写法不同，处理方式不同）。CMD 推崇 as lazy as possible. CMD 推崇依赖就近，AMD 推崇依赖前置。 AMD 的 API 默认是一个当多个用，CMD 的 API 严格区分，推崇职责单一。比如 AMD 里，require 分全局 require 和局部 require，都叫 require。CMD 里，没有<br>全局 require，而是根据模块系统的完备性，提供 seajs.use 来实现模块系统的加载启动。CMD 里，每个 API 都简单纯粹。</p>
 <h3 id="ES6常用特性"><a href="#ES6常用特性" class="headerlink" title="ES6常用特性"></a>ES6常用特性</h3><p>变量定义(let 和 const,可变与不可变，const 定义对象的特殊情况)<br>解构赋值<br>模板字符串<br>数组新 API(例：Array.from(),entries(),values(),keys())<br>箭头函数(rest 参数，扩展运算符，::绑定 this)<br>Set 和 Map 数据结构(set 实例成员值唯一存储 key 值，map 实例存储键值对(key- value))<br>Promise 对象(前端异步解决方案进化史，generator 函数，async 函数)<br>Class 语法糖(super 关键字)</p>
 <h3 id="对ES6的理解"><a href="#对ES6的理解" class="headerlink" title="对ES6的理解"></a>对ES6的理解</h3><p>语法糖(箭头函数，类的定义，继承)，以及一些新的扩展（数组，字符串，对象，方 法等），对作用域的重新定义，以及异步编程的解决方案（promise，async，<br>await）、解构赋值的出现<br>1 块级作用域绑定<br>2 字符串和正则表达式<br>3 函数<br>4 扩展对象的功能性<br>5 解构：使数据访问更便捷<br>6 Symbol 和 Symbol 属性<br>7 Set 集合与 Map 集合<br>8 迭代器（Iterator）和生成器（Generator）<br>9 JavaScript 中的类<br>10 改进数组的功能<br>11 Promise 与异步编程<br>12 代理（Proxy)和反射（Peflection）<br>13 用模块封装代码</p>
@@ -446,7 +412,7 @@ return (
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://iamwangzhaoyu.github.io/2022/06/25/Interview-questions/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://iamwangzhaoyu.github.io/Interview-Questions/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -455,27 +421,8 @@ return (
   </div>
 
    
-  <nav class="article-nav">
-    
-    
-      <a href="/2022/06/25/hello-world/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Hello World</div>
-      </a>
-    
-  </nav>
-
   
-   
     
-    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
-    <div id="twikoo" class="twikoo"></div>
-    <script>
-        twikoo.init({
-            envId: ""
-        })
-    </script>
- 
 </article>
 
 </section>
@@ -626,22 +573,6 @@ return (
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
- 
-<script src="/js/tocbot.min.js"></script>
-
-<script>
-  tocbot.init({
-    tocSelector: ".tocbot",
-    contentSelector: ".article-entry",
-    headingSelector: "h1, h2, h3, h4, h5, h6",
-    hasInnerContainers: true,
-    scrollSmooth: true,
-    scrollContainer: "main",
-    positionFixedSelector: ".tocbot",
-    positionFixedClass: "is-position-fixed",
-    fixedSidebarOffset: "auto",
-  });
-</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
