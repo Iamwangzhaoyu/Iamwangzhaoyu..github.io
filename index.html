@@ -152,7 +152,7 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="面试题目录"><a href="#面试题目录" class="headerlink" title="面试题目录"></a>面试题目录</h1><h3 id="原型、原型链"><a href="#原型、原型链" class="headerlink" title="原型、原型链"></a>原型、原型链</h3><p>每个对象都会在其内部初始化一个属性，就是 prototype(原型)，当我们访问一个对 象的属性时，如果这个对象内部不存在这个属性，那么他就会去 prototype 里找这个 属性，这个 prototype 又会有自己的 prototype，于是就这样一直找下去，也就是我 们平时所说的原型链的概念。 关系：instance.constructor.prototype = instance.<strong>proto</strong><br>特点： JavaScript 对象是通过引用来传递的，我们创建的每个新对象实体中并没有一份属于 自己的原型副本。当我们修改原型时，与之相关的对象也会继承这一改变。 当我们需要一个属性的时，Javascript 引擎会先看当前对象中是否有这个属性， 如果 没有的话，就会查找他的 Prototype 对象是否有这个属性，如此递推下去，一直检索 到 Object 内建对象</p>
+  <h1 id="Web知识点汇总"><a href="#Web知识点汇总" class="headerlink" title="Web知识点汇总"></a>Web知识点汇总</h1><h3 id="原型、原型链"><a href="#原型、原型链" class="headerlink" title="原型、原型链"></a>原型、原型链</h3><p>每个对象都会在其内部初始化一个属性，就是 prototype(原型)，当我们访问一个对 象的属性时，如果这个对象内部不存在这个属性，那么他就会去 prototype 里找这个 属性，这个 prototype 又会有自己的 prototype，于是就这样一直找下去，也就是我 们平时所说的原型链的概念。 关系：instance.constructor.prototype = instance.<em>proto</em><br>特点： JavaScript 对象是通过引用来传递的，我们创建的每个新对象实体中并没有一份属于 自己的原型副本。当我们修改原型时，与之相关的对象也会继承这一改变。 当我们需要一个属性的时，Javascript 引擎会先看当前对象中是否有这个属性， 如果 没有的话，就会查找他的 Prototype 对象是否有这个属性，如此递推下去，一直检索 到 Object 内建对象</p>
 <h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><p>Undefined、Null、Boolean、Number、String</p>
 <h3 id="js内置对象"><a href="#js内置对象" class="headerlink" title="js内置对象"></a>js内置对象</h3><p>Object 是 JavaScript 中所有对象的父对象 数据封装类对象：Object、Array、Boolean、Number 和 String 其他对象：Function、Arguments、Math、Date、RegExp、Error</p>
 <h3 id="Js有几种类型的值以及存储的位置"><a href="#Js有几种类型的值以及存储的位置" class="headerlink" title="Js有几种类型的值以及存储的位置"></a>Js有几种类型的值以及存储的位置</h3><p>栈：原始数据类型（Undefined，Null，Boolean，Number、String） 堆：引用数据类型（对象、数组和函数） 两种类型的区别是：存储位置不同； 43<br>44 1，原始数据类型直接存储在栈(stack)中的简单数据段，占据空间小、大小固定，属 于被频繁使用数据，所以放入栈中存储； 2，引用数据类型存储在堆(heap)中的对象,占据空间大、大小不固定,如果存储在栈 中，将会影响程序运行的性能；引用数据类型在栈中存储了指针，该指针指向堆中该 实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后 从堆中获得实体</p>
@@ -474,11 +474,11 @@ return (
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/src/Interview">分类</a>
+      <a class="nav-item-link" href="/Interview">分类</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/src/tags">标签</a>
+      <a class="nav-item-link" href="/tags">标签</a>
     </li>
     
     <li class="nav-item">
@@ -494,7 +494,7 @@ return (
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/src/my">关于我</a>
+      <a class="nav-item-link" href="/my">关于我</a>
     </li>
     
   </ul>
