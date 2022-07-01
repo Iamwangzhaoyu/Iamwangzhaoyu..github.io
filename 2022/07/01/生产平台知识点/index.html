@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-Fans">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="记录生活点滴" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>生产平台知识点 |  富婆养生会所</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/images/header.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-生产平台知识点"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  生产平台知识点
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/07/01/%E7%94%9F%E4%BA%A7%E5%B9%B3%E5%8F%B0%E7%9F%A5%E8%AF%86%E7%82%B9/" class="article-date">
+  <time datetime="2022-07-01T09:42:30.000Z" itemprop="datePublished">2022-07-01</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">3.2k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">15 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="一、中英文切换"><a href="#一、中英文切换" class="headerlink" title="一、中英文切换"></a>一、中英文切换</h3><p>1、安装</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> i18next reacti18next -S</span><br></pre></td></tr></table></figure>
+
+<h4 id="1、使用"><a href="#1、使用" class="headerlink" title="1、使用"></a>1、使用</h4><h5 id="（1）、准备语言包"><a href="#（1）、准备语言包" class="headerlink" title="（1）、准备语言包"></a>（1）、准备语言包</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;en&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;common&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;aticle&quot;</span><span class="punctuation">:</span><span class="string">&quot;aticle&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;files&quot;</span><span class="punctuation">:</span><span class="string">&quot;files&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;notebook&quot;</span><span class="punctuation">:</span><span class="string">&quot;notebook&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;comments&quot;</span><span class="punctuation">:</span><span class="string">&quot;comments&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;about&quot;</span><span class="punctuation">:</span><span class="string">&quot;about&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;zh_CN&quot;</span><span class="punctuation">:</span><span class="string">&quot;chinese&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;en_US&quot;</span><span class="punctuation">:</span><span class="string">&quot;english&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;zh&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;common&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;aticle&quot;</span><span class="punctuation">:</span><span class="string">&quot;文章&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;files&quot;</span><span class="punctuation">:</span><span class="string">&quot;归档&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;notebook&quot;</span><span class="punctuation">:</span><span class="string">&quot;知识小册&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;comments&quot;</span><span class="punctuation">:</span><span class="string">&quot;留言板&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;about&quot;</span><span class="punctuation">:</span><span class="string">&quot;关于&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;zh_CN&quot;</span><span class="punctuation">:</span><span class="string">&quot;中文&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;en_US&quot;</span><span class="punctuation">:</span><span class="string">&quot;英文&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="（2）、在项目中使用"><a href="#（2）、在项目中使用" class="headerlink" title="（2）、在项目中使用"></a>（2）、在项目中使用</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> i18n <span class="keyword">from</span> <span class="string">&#x27;i18next&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; initReactI18next &#125; <span class="keyword">from</span> <span class="string">&#x27;react-i18next&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> language <span class="keyword">from</span> <span class="string">&#x27;./localanuage.json&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> languageKeys = [</span><br><span class="line">    <span class="string">&#x27;zh_CN&#x27;</span>,<span class="string">&#x27;en_US&#x27;</span></span><br><span class="line">]</span><br><span class="line"><span class="comment">// 初始化i18n</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">initI18n</span> = (<span class="params">locale:<span class="built_in">any</span></span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> resources = &#123;</span><br><span class="line">        <span class="attr">zh_CN</span>: &#123;</span><br><span class="line">            <span class="attr">translation</span>: locale.<span class="property">zh</span>, </span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">en_US</span>: &#123;</span><br><span class="line">            <span class="attr">translation</span>: locale.<span class="property">en</span>,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    i18n.<span class="title function_">use</span>(initReactI18next) <span class="comment">// passes i18n down to react-i18next</span></span><br><span class="line">        .<span class="title function_">init</span>(&#123;</span><br><span class="line">            resources,</span><br><span class="line">            <span class="attr">lng</span>: <span class="string">&#x27;en_US&#x27;</span>,</span><br><span class="line">            <span class="attr">debug</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="comment">// keySeparator: false, // we do not use keys in form messages.welcome</span></span><br><span class="line">            <span class="attr">interpolation</span>: &#123;</span><br><span class="line">                <span class="attr">escapeValue</span>: <span class="literal">false</span>, <span class="comment">// react already safes from xss</span></span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="title function_">initI18n</span>(language)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> i18n;</span><br></pre></td></tr></table></figure>
+
+<h5 id="（3）、在index-ts中引入"><a href="#（3）、在index-ts中引入" class="headerlink" title="（3）、在index.ts中引入"></a>（3）、在<code>index.ts</code>中引入</h5><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./i18n&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="（4）、切换语言"><a href="#（4）、切换语言" class="headerlink" title="（4）、切换语言"></a>（4）、切换语言</h5><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">getI18n</span><span class="params">()</span></span><span class="selector-class">.changeLanguage</span>(<span class="string">&#x27;en_US&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、换肤"><a href="#二、换肤" class="headerlink" title="二、换肤"></a>二、换肤</h3><h4 id="1、声明变量"><a href="#1、声明变量" class="headerlink" title="1、声明变量"></a>1、声明变量</h4><h5 id="（1）、html中声明并使用"><a href="#（1）、html中声明并使用" class="headerlink" title="（1）、html中声明并使用"></a>（1）、html中声明并使用</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-pseudo">:root</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attr">--background</span>:red;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">body</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>:<span class="built_in">var</span>(--background);</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">//在Js中修改css变量的值</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"> <span class="keyword">let</span> root = <span class="variable language_">document</span>.<span class="property">documentElement</span>;</span></span><br><span class="line"><span class="language-javascript"> root.<span class="property">style</span>.<span class="title function_">setProperty</span>(<span class="string">&quot;--background&quot;</span>, <span class="string">&quot;yellow&quot;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="（2）、直接在js中初始化，样式提供在json中"><a href="#（2）、直接在js中初始化，样式提供在json中" class="headerlink" title="（2）、直接在js中初始化，样式提供在json中"></a>（2）、直接在js中初始化，样式提供在json中</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">const</span> [cssVar,setCssVar] = <span class="title function_">useState</span>(<span class="string">&#x27;baitian&#x27;</span>)</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  修改之后立马要用这个状态</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="title function_">useEffect</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> root = <span class="variable language_">document</span>.<span class="property">documentElement</span>;<span class="comment">//获取root元素</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> key <span class="keyword">in</span> (colorObj <span class="keyword">as</span> <span class="built_in">any</span>)[cssVar])&#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(key,(colorObj <span class="keyword">as</span> <span class="built_in">any</span>)[cssVar][key])</span><br><span class="line">      root.<span class="property">style</span>.<span class="title function_">setProperty</span>(key, (colorObj <span class="keyword">as</span> <span class="built_in">any</span>)[cssVar][key]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;,[cssVar])</span><br></pre></td></tr></table></figure>
+
+<h5 id="（3）、样式变量json"><a href="#（3）、样式变量json" class="headerlink" title="（3）、样式变量json"></a>（3）、样式变量json</h5><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;daytime&quot;</span>:&#123;</span><br><span class="line">        <span class="string">&quot;--my_header_color&quot;</span>:<span class="string">&quot;#999&quot;</span>,</span><br><span class="line">        <span class="string">&quot;--my_header_backgroundcolor&quot;</span>:<span class="string">&quot;<span class="subst">#fff</span>&quot;</span>,</span><br><span class="line">        <span class="string">&quot;--my_body_backgroundcolor&quot;</span>:<span class="string">&quot;<span class="subst">#E7EAEE</span>&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;night&quot;</span>:&#123;</span><br><span class="line">        <span class="string">&quot;--my_header_color&quot;</span>:<span class="string">&quot;<span class="subst">#fff</span>&quot;</span>,</span><br><span class="line">        <span class="string">&quot;--my_header_backgroundcolor&quot;</span>:<span class="string">&quot;#282C35&quot;</span>,</span><br><span class="line">        <span class="string">&quot;--my_body_backgroundcolor&quot;</span>:<span class="string">&quot;#282C35&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="三、react解析富文本"><a href="#三、react解析富文本" class="headerlink" title="三、react解析富文本"></a>三、react解析富文本</h3><h4 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h4><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install <span class="comment">--save react-markdown</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ReactDom</span> <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ReactMarkdown</span> <span class="keyword">from</span> <span class="string">&#x27;react-markdown&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> markdown = <span class="string">`Just a link: https://reactjs.com.`</span></span><br><span class="line"><span class="title class_">ReactDom</span>.<span class="title function_">render</span>(</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">ReactMarkdown</span> <span class="attr">children</span>=<span class="string">&#123;markdown&#125;</span>  /&gt;</span></span>,</span><br><span class="line">  <span class="variable language_">document</span>.<span class="property">body</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、带编辑的富文本"><a href="#3、带编辑的富文本" class="headerlink" title="3、带编辑的富文本"></a>3、带编辑的富文本</h4><h5 id="（1）、安装"><a href="#（1）、安装" class="headerlink" title="（1）、安装"></a>（1）、安装</h5><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install react-markdown-editor-lite <span class="comment">--save</span></span><br><span class="line">npm install markdown-<span class="keyword">it</span> <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="（2）、使用"><a href="#（2）、使用" class="headerlink" title="（2）、使用"></a>（2）、使用</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ReactDOM</span> <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">MdEditor</span> <span class="keyword">from</span> <span class="string">&#x27;react-markdown-editor-lite&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">MarkdownIt</span> <span class="keyword">from</span> <span class="string">&#x27;markdown-it&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">MOCK_DATA</span> = <span class="string">&quot;Hello.\n\n * This is markdown.\n * It is fun\n * Love it or leave it.&quot;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">class</span> <span class="title class_">Demo</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  mdParser = <span class="literal">null</span></span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props)</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">mdParser</span> = <span class="keyword">new</span> <span class="title class_">MarkdownIt</span>(<span class="comment">/* Markdown-it options */</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  handleEditorChange (&#123;html, text&#125;) &#123;    </span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;handleEditorChange&#x27;</span>, html, text)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (      </span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;height: 500px&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">MdEditor</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">value</span>=<span class="string">&#123;MOCK_DATA&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">renderHTML</span>=<span class="string">&#123;(text)</span> =&gt;</span> this.mdParser.render(text)&#125;</span></span><br><span class="line"><span class="language-xml">          onChange=&#123;this.handleEditorChange&#125; </span></span><br><span class="line"><span class="language-xml">        /&gt;                </span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="四、页面响应式如何实现"><a href="#四、页面响应式如何实现" class="headerlink" title="四、页面响应式如何实现"></a>四、页面响应式如何实现</h3><h4 id="1、媒体查询"><a href="#1、媒体查询" class="headerlink" title="1、媒体查询"></a>1、媒体查询</h4><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media media<span class="keyword">type</span> and|not|only (media feature)&#123;</span><br><span class="line">      css-code;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>用@media开通 注意@符号</li>
+<li>mediatype 媒体类型</li>
+<li>关键字 and not only</li>
+<li>media feature 媒体特性，必须有小括号包含</li>
+</ul>
+<h5 id="（1）、style标签中的使用"><a href="#（1）、style标签中的使用" class="headerlink" title="（1）、style标签中的使用"></a>（1）、style标签中的使用</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>:<span class="number">750px</span>)&#123;</span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.nav</span>&#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">background-color</span>:red;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>复合条件：</strong></p>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@media screen <span class="title function_">and</span> (<span class="built_in">max</span>-<span class="built_in">width</span>: <span class="number">1000</span>px) <span class="title function_">and</span> (<span class="built_in">min</span>-<span class="built_in">width</span>: <span class="number">500</span>px) &#123; .<span class="property">box</span>&#123;<span class="type">color</span>:<span class="built_in">red</span>;&#125; &#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="（2）、引入资源时使用"><a href="#（2）、引入资源时使用" class="headerlink" title="（2）、引入资源时使用"></a>（2）、引入资源时使用</h5><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link <span class="attribute">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attribute">href</span>=<span class="string">&quot;xxx.css&quot;</span> <span class="attribute">media</span>=<span class="string">&quot;screen and (min-width:320px)&quot;</span>&gt;&lt;/link&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、rem"><a href="#2、rem" class="headerlink" title="2、rem"></a>2、rem</h4><p><strong>rem</strong>是html根元素的<code>font-size</code><br>监听屏幕变化事件,利用封装好的函数进行rem重置即可</p>
+<figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">function</span>(<span class="name">doc</span>, win) &#123;</span><br><span class="line">    var docEl = doc.documentElement,</span><br><span class="line">        resizeEvt = <span class="symbol">&#x27;orientationchange</span>&#x27; in window ? <span class="symbol">&#x27;orientationchange</span>&#x27; : <span class="symbol">&#x27;resize</span>&#x27;,</span><br><span class="line">        recalc = function() &#123;</span><br><span class="line">            var clientWidth = docEl.clientWidth<span class="comment">;</span></span><br><span class="line">            if (<span class="name">!clientWidth</span>) return<span class="comment">;</span></span><br><span class="line">            //if(<span class="name">clientWidth&gt;=750</span>)&#123;clientWidth=750&#125;</span><br><span class="line">            docEl.style.fontSize = <span class="number">100</span> * (<span class="name">clientWidth</span> / <span class="number">750</span>) + <span class="symbol">&#x27;px</span>&#x27;<span class="comment">;</span></span><br><span class="line">        &#125;<span class="comment">;</span></span><br><span class="line">    if (<span class="name">!doc.addEventListener</span>) return<span class="comment">;</span></span><br><span class="line">    win.addEventListener(<span class="name">resizeEvt</span>, recalc, false)<span class="comment">;</span></span><br><span class="line">    doc.addEventListener(<span class="symbol">&#x27;DOMContentLoaded</span>&#x27;, recalc, false)<span class="comment">;</span></span><br><span class="line">&#125;)(<span class="name">document</span>, window)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3、flex"><a href="#3、flex" class="headerlink" title="3、flex"></a>3、flex</h4><h5 id="（1）、主轴、侧轴"><a href="#（1）、主轴、侧轴" class="headerlink" title="（1）、主轴、侧轴"></a>（1）、主轴、侧轴</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">flex-direction</span>修改主轴为水平或垂直方向</span><br></pre></td></tr></table></figure>
+
+<h5 id="（2）、父盒子属性"><a href="#（2）、父盒子属性" class="headerlink" title="（2）、父盒子属性"></a>（2）、父盒子属性</h5><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">justify-content</span>:设置子盒子在主轴方向上的表现</span><br><span class="line"><span class="attribute">align-items</span>:设置子盒子在侧轴方向上的表现</span><br></pre></td></tr></table></figure>
+
+<h5 id="（3）、子盒子属性"><a href="#（3）、子盒子属性" class="headerlink" title="（3）、子盒子属性"></a>（3）、子盒子属性</h5><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">flex-grow</span>:在主轴方向上的伸展特性</span><br><span class="line"><span class="attribute">flex-shrink</span>:在主轴方向上的缩小特性</span><br><span class="line"><span class="attribute">flex-base</span>:伸缩的起点</span><br><span class="line"><span class="attribute">align-self</span>:设置自己在侧轴方向上的对齐方式</span><br></pre></td></tr></table></figure>
+
+<h5 id="（4）、复合属性"><a href="#（4）、复合属性" class="headerlink" title="（4）、复合属性"></a>（4）、复合属性</h5><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">flex</span>:<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="五、下拉加载怎么实现"><a href="#五、下拉加载怎么实现" class="headerlink" title="五、下拉加载怎么实现"></a>五、下拉加载怎么实现</h3><h4 id="1、监听scroll事件"><a href="#1、监听scroll事件" class="headerlink" title="1、监听scroll事件"></a>1、监听<code>scroll</code>事件</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> containerDom:RefObject&lt;HTMLDivElement&gt; = useRef(<span class="literal">null</span>)</span><br><span class="line">  <span class="comment">//const myHref = useHref()</span></span><br><span class="line">  <span class="keyword">const</span> containerScroll = useCallback((<span class="keyword">event</span>)=&gt;&#123;</span><br><span class="line">    <span class="keyword">const</span> scrollTop = (<span class="keyword">event</span>.srcElement ? <span class="keyword">event</span>.srcElement.documentElement.scrollTop : <span class="literal">false</span>)</span><br><span class="line">    || window.pageYOffset</span><br><span class="line">    || (<span class="keyword">event</span>.srcElement ? <span class="keyword">event</span>.srcElement.body.scrollTop : <span class="number">0</span>);</span><br><span class="line">    console.log(<span class="string">&#x27;触发了滚动事件&#x27;</span>,scrollTop)</span><br><span class="line">    <span class="keyword">if</span>(scrollTop&gt;<span class="number">60</span>)&#123;</span><br><span class="line">      containerDom.current?.classList.<span class="keyword">remove</span>(<span class="string">&#x27;header_active&#x27;</span>)</span><br><span class="line">      containerDom.current?.classList.<span class="keyword">add</span>(<span class="string">&#x27;header_hidden&#x27;</span>)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      containerDom.current?.classList.<span class="keyword">remove</span>(<span class="string">&#x27;header_hidden&#x27;</span>)</span><br><span class="line">      containerDom.current?.classList.<span class="keyword">add</span>(<span class="string">&#x27;header_active&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,[])</span><br><span class="line">  useEffect(()=&gt;&#123;</span><br><span class="line">    window.addEventListener(<span class="string">&#x27;scroll&#x27;</span>,containerScroll)</span><br><span class="line">    <span class="keyword">return</span> ()=&gt;&#123;</span><br><span class="line">      window.removeEventListener(<span class="string">&#x27;scroll&#x27;</span>,containerScroll)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,[])</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、IntersectionObserver"><a href="#2、IntersectionObserver" class="headerlink" title="2、IntersectionObserver"></a>2、<code>IntersectionObserver</code></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取要监测的元素</span></span><br><span class="line"><span class="keyword">const</span> boxes = <span class="variable language_">this</span>.<span class="property">oberservDom</span>.<span class="property">current</span></span><br><span class="line"><span class="comment">//  </span></span><br><span class="line"><span class="comment">// 创建观察者，配置回调函数</span></span><br><span class="line"><span class="comment">// 通过 isIntersecting 属性判断元素与视口是否相交</span></span><br><span class="line"><span class="keyword">const</span> observer = <span class="keyword">new</span> <span class="title class_">IntersectionObserver</span>(<span class="function">(<span class="params">entries, observer</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(!<span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">flag</span>)&#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">append</span>()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(entries)</span><br><span class="line">   </span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//  </span></span><br><span class="line">observer.<span class="title function_">observe</span>(boxes);</span><br></pre></td></tr></table></figure>
+
+<h3 id="六、吸顶效果怎么实现"><a href="#六、吸顶效果怎么实现" class="headerlink" title="六、吸顶效果怎么实现"></a>六、吸顶效果怎么实现</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attribute">position</span>:sticky;<span class="attribute">top</span>:<span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="七、函数组件性能优化的方式"><a href="#七、函数组件性能优化的方式" class="headerlink" title="七、函数组件性能优化的方式"></a>七、函数组件性能优化的方式</h3><h4 id="1、类组件的优化方式"><a href="#1、类组件的优化方式" class="headerlink" title="1、类组件的优化方式"></a>1、类组件的优化方式</h4><h4 id="（1）、shouldComponentUpdate"><a href="#（1）、shouldComponentUpdate" class="headerlink" title="（1）、shouldComponentUpdate"></a>（1）、<code>shouldComponentUpdate</code></h4><p>返回一个boolean值，为true才会渲染，为false则不渲染</p>
+<h4 id="（2）、PurComponent"><a href="#（2）、PurComponent" class="headerlink" title="（2）、PurComponent"></a>（2）、<code>PurComponent</code></h4><h4 id="（3）、memo高阶组件"><a href="#（3）、memo高阶组件" class="headerlink" title="（3）、memo高阶组件"></a>（3）、memo高阶组件</h4><h4 id="2、函数组件的优化方式"><a href="#2、函数组件的优化方式" class="headerlink" title="2、函数组件的优化方式"></a>2、函数组件的优化方式</h4><h5 id="（1）、useMemo"><a href="#（1）、useMemo" class="headerlink" title="（1）、useMemo"></a>（1）、<code>useMemo</code></h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">TestCom</span> = <span class="title function_">useMemo</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">Sub</span>&gt;</span><span class="tag">&lt;/<span class="name">Sub</span>&gt;</span></span></span><br><span class="line">&#125;,[])</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> (<span class="language-xml"><span class="tag">&lt;&gt;</span>&#123;TestCom&#125;<span class="tag">&lt;/&gt;</span></span>)</span><br></pre></td></tr></table></figure>
+
+<h5 id="（2）、memo"><a href="#（2）、memo" class="headerlink" title="（2）、memo"></a>（2）、<code>memo</code></h5><h3 id="八、怎么封装独立组件（包括二次封装）"><a href="#八、怎么封装独立组件（包括二次封装）" class="headerlink" title="八、怎么封装独立组件（包括二次封装）"></a>八、怎么封装独立组件（包括二次封装）</h3><h4 id="1、组件功能高内聚"><a href="#1、组件功能高内聚" class="headerlink" title="1、组件功能高内聚"></a>1、组件功能高内聚</h4><h4 id="2、可定制性"><a href="#2、可定制性" class="headerlink" title="2、可定制性"></a>2、可定制性</h4><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">Test</span> <span class="attr">className</span>=<span class="string">&quot;test&quot;</span> <span class="attr">children</span>=</span></span><span class="template-variable">&#123;children&#125;</span><span class="language-xml"><span class="tag"> <span class="attr">onok</span> = </span></span><span class="template-variable">&#123;fn&#125;</span><span class="language-xml"><span class="tag"> <span class="attr">onfail</span>=</span></span><span class="template-variable">&#123;fn&#125;</span><span class="language-xml"><span class="tag">&gt;</span></span><span class="template-variable">&#123;children&#125;</span><span class="language-xml"><span class="tag">&lt;/<span class="name">Test</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3、可扩展性"><a href="#3、可扩展性" class="headerlink" title="3、可扩展性"></a>3、可扩展性</h4><h3 id="九、gitee第三方登录怎么实现"><a href="#九、gitee第三方登录怎么实现" class="headerlink" title="九、gitee第三方登录怎么实现"></a>九、gitee第三方登录怎么实现</h3><h4 id="1、在码云上申请一个应用获取id和secret"><a href="#1、在码云上申请一个应用获取id和secret" class="headerlink" title="1、在码云上申请一个应用获取id和secret"></a>1、在码云上申请一个应用获取id和secret</h4><h4 id="2、配置本地项目的package-json，保证启动端口为80"><a href="#2、配置本地项目的package-json，保证启动端口为80" class="headerlink" title="2、配置本地项目的package.json，保证启动端口为80"></a>2、配置本地项目的<code>package.json</code>，保证启动端口为80</h4><figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"> <span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;start&quot;</span>: <span class="string">&quot;set PORT=80 &amp;&amp; node scripts/start.js&quot;</span>,</span><br><span class="line">    <span class="string">&quot;build&quot;</span>: <span class="string">&quot;node scripts/build.js&quot;</span>,</span><br><span class="line">    <span class="string">&quot;test&quot;</span>: <span class="string">&quot;node scripts/test.js&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、修改本地hosts文件，实现本地域名映射"><a href="#3、修改本地hosts文件，实现本地域名映射" class="headerlink" title="3、修改本地hosts文件，实现本地域名映射"></a>3、修改本地hosts文件，实现本地域名映射</h4><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">127.0.0.1</span>  www.gwq.com//这个域名是你申请gitee第三方应用时填写的域名</span><br></pre></td></tr></table></figure>
+
+<h4 id="4、关闭create-react-app的域名校验"><a href="#4、关闭create-react-app的域名校验" class="headerlink" title="4、关闭create-react-app的域名校验"></a>4、关闭<code>create-react-app</code>的域名校验</h4><h5 id="（1）、npm-run-eject（必须保证，working-tree-clean）"><a href="#（1）、npm-run-eject（必须保证，working-tree-clean）" class="headerlink" title="（1）、npm run eject（必须保证，working tree clean）"></a>（1）、<code>npm run eject</code>（必须保证，<code>working tree clean</code>）</h5><h5 id="（2）、关闭devserver中的域名检验"><a href="#（2）、关闭devserver中的域名检验" class="headerlink" title="（2）、关闭devserver中的域名检验"></a>（2）、关闭devserver中的域名检验</h5><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">allowedHosts:</span><span class="comment">&#x27;all&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5、在本地准备回调页www-gwq-com-callbackpage"><a href="#5、在本地准备回调页www-gwq-com-callbackpage" class="headerlink" title="5、在本地准备回调页www.gwq.com/callbackpage"></a>5、在本地准备回调页<code>www.gwq.com/callbackpage</code></h4><blockquote>
+<p>你这个回调页必须与在码云上注册应用是填写的回调页一致</p>
+</blockquote>
+<h4 id="6、请求access-token"><a href="#6、请求access-token" class="headerlink" title="6、请求access_token"></a>6、请求<code>access_token</code></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> code = result[<span class="number">1</span>];</span><br><span class="line"><span class="keyword">let</span> client_id = <span class="string">&quot;a227d598eb9532b2cc3c4a8a0816d04c2483843e7e8d0f1f56761da6f92f684c&quot;</span></span><br><span class="line"><span class="keyword">let</span> client_secret = <span class="string">&quot;ce37073cb64d76a817a75dfb37cd35ee3b9000ca09e8249e67f9074b2a78eed4&quot;</span></span><br><span class="line"><span class="keyword">let</span> redirect_uri = <span class="string">&quot;http://www.gwq.com/callbackpage&quot;</span></span><br><span class="line"><span class="keyword">let</span> url = <span class="string">`https://gitee.com/oauth/token?grant_type=authorization_code&amp;code=<span class="subst">$&#123;code&#125;</span>&amp;client_id=<span class="subst">$&#123;client_id&#125;</span>&amp;redirect_uri=<span class="subst">$&#123;redirect_uri&#125;</span>&amp;client_secret=<span class="subst">$&#123;client_secret&#125;</span>`</span></span><br><span class="line"></span><br><span class="line">axios.<span class="title function_">post</span>(url).<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123;<span class="comment">//获取access_token的操作</span></span><br><span class="line">   <span class="keyword">return</span> res.<span class="property">data</span>.<span class="property">access_token</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="7、拉取用户信息"><a href="#7、拉取用户信息" class="headerlink" title="7、拉取用户信息"></a>7、拉取用户信息</h4><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">axios.get(<span class="string">&quot;https://gitee.com/api/v5/user?access_token=&quot;</span>+resToken).<span class="keyword">then</span>(<span class="function"><span class="params">(res)</span>=&gt;</span>&#123;</span><br><span class="line">    setUser(res.data)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="十、函数组件和类组件的区别"><a href="#十、函数组件和类组件的区别" class="headerlink" title="十、函数组件和类组件的区别"></a>十、函数组件和类组件的区别</h3><table>
+<thead>
+<tr>
+<th>函数组件和类组件的区别</th>
+<th>函数组件</th>
+<th>类组件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>state</td>
+<td>无</td>
+<td>有</td>
+</tr>
+<tr>
+<td>生命周期</td>
+<td>无</td>
+<td>有</td>
+</tr>
+<tr>
+<td>重量级</td>
+<td>轻</td>
+<td>重</td>
+</tr>
+</tbody></table>
+<h3 id="十一、axios怎么二次封装"><a href="#十一、axios怎么二次封装" class="headerlink" title="十一、axios怎么二次封装"></a>十一、axios怎么二次封装</h3><h4 id="1、做请求属性的设置"><a href="#1、做请求属性的设置" class="headerlink" title="1、做请求属性的设置"></a>1、做请求属性的设置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> request = axios.createAction(&#123;</span><br><span class="line">    baseUrl:<span class="string">&#x27;&#x27;</span>,</span><br><span class="line">    <span class="built_in">timeout</span>:5000</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、请求拦截"><a href="#2、请求拦截" class="headerlink" title="2、请求拦截"></a>2、请求拦截</h4><p>一般都是处理请求头，<code>access_token</code>、<code>authoriztion:&quot;bare xxxxx&quot;</code></p>
+<h4 id="3、响应拦截"><a href="#3、响应拦截" class="headerlink" title="3、响应拦截"></a>3、响应拦截</h4><p>一般都是用来过滤数据或者统一处理异常的</p>
+<h3 id="十二、redux怎么处理异步"><a href="#十二、redux怎么处理异步" class="headerlink" title="十二、redux怎么处理异步"></a>十二、redux怎么处理异步</h3><h4 id="1、redux-thunk-异步action"><a href="#1、redux-thunk-异步action" class="headerlink" title="1、redux-thunk 异步action"></a>1、<code>redux-thunk</code> 异步action</h4><h4 id="2、redux-saga-基于generator函数实现，可以实现异步流程控制"><a href="#2、redux-saga-基于generator函数实现，可以实现异步流程控制" class="headerlink" title="2、redux-saga 基于generator函数实现，可以实现异步流程控制"></a>2、<code>redux-saga</code> 基于generator函数实现，可以实现异步流程控制</h4><h3 id="十三、后台怎么导出excel"><a href="#十三、后台怎么导出excel" class="headerlink" title="十三、后台怎么导出excel"></a>十三、后台怎么导出excel</h3><blockquote>
+<p>我们前端做的工作就是生成一个a标签，然后触发它的click</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//文件下载，模拟一个a标签，然后出发a标签的下载动作即可</span></span><br><span class="line"><span class="comment">// 用fetch发送请求 对请求回来的二进制文件流进行处理</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&#x27;/upload/user.png&#x27;</span>).<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  res.<span class="title function_">blob</span>().<span class="title function_">then</span>(<span class="function">(<span class="params">blob</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> blobUrl = <span class="variable language_">window</span>.<span class="property">URL</span>.<span class="title function_">createObjectURL</span>(blob);</span><br><span class="line">    <span class="comment">// 这里的文件名根据实际情况从响应头或者url里获取</span></span><br><span class="line">    <span class="keyword">const</span> filename = <span class="string">&#x27;user.txt&#x27;</span>;</span><br><span class="line">    <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    a.<span class="property">href</span> = blobUrl;</span><br><span class="line">    a.<span class="property">download</span> = filename;;</span><br><span class="line">    a.<span class="title function_">click</span>();</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">URL</span>.<span class="title function_">revokeObjectURL</span>(blobUrl);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="十四、怎么根据权限来显示后台列表的相关模块"><a href="#十四、怎么根据权限来显示后台列表的相关模块" class="headerlink" title="十四、怎么根据权限来显示后台列表的相关模块"></a>十四、怎么根据权限来显示后台列表的相关模块</h3><h4 id="1、动态路由"><a href="#1、动态路由" class="headerlink" title="1、动态路由"></a>1、<em>动态</em>路由</h4><h4 id="2、角色"><a href="#2、角色" class="headerlink" title="2、角色"></a>2、角色</h4><h3 id="十五、数据可视化的实现方式"><a href="#十五、数据可视化的实现方式" class="headerlink" title="十五、数据可视化的实现方式"></a>十五、数据可视化的实现方式</h3><p>1、canvas（位图）<br>2、svg（矢量图）<br>3、webgl<br>4、echarts<br>5、antv</p>
+<h3 id="十六、服务端怎么验证token的正确性"><a href="#十六、服务端怎么验证token的正确性" class="headerlink" title="十六、服务端怎么验证token的正确性"></a>十六、服务端怎么验证token的正确性</h3><p><strong>jwt</strong></p>
+<h3 id="十七、怎么实现防抖"><a href="#十七、怎么实现防抖" class="headerlink" title="十七、怎么实现防抖"></a>十七、怎么实现防抖</h3><blockquote>
+<p>使用延时计时器判断是否已经在执行该动作，如果已有在执行，则不设置新的计时器</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [cssVar,setCssVar] = <span class="title function_">useState</span>(<span class="string">&#x27;baitian&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> [timer,setTimer] = useState&lt;<span class="built_in">any</span>&gt;(<span class="number">0</span>);</span><br><span class="line">...</span><br><span class="line"> <span class="keyword">if</span>(!timer)&#123;<span class="comment">//防抖</span></span><br><span class="line">  <span class="keyword">let</span> <span class="built_in">number</span> = <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(cssVar===<span class="string">&#x27;baitian&#x27;</span>)&#123;</span><br><span class="line">      <span class="title function_">setCssVar</span>(<span class="string">&#x27;heiye&#x27;</span>)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="title function_">setCssVar</span>(<span class="string">&#x27;baitian&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">clearTimeout</span>(<span class="built_in">number</span>)</span><br><span class="line">    <span class="title function_">setTimer</span>(<span class="number">0</span>)</span><br><span class="line">  &#125;,<span class="number">2000</span>)</span><br><span class="line">  <span class="title function_">setTimer</span>(<span class="built_in">number</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="十八、怎么验证用户的登录状态"><a href="#十八、怎么验证用户的登录状态" class="headerlink" title="十八、怎么验证用户的登录状态"></a>十八、怎么验证用户的登录状态</h3><p><strong>jwt</strong> <strong>websocket</strong></p>
+<ul>
+<li>http协议是无状态的（一次请求一次响应然后断开连接）</li>
+<li><code>socketio</code></li>
+</ul>
+<h3 id="十九、什么是高阶组件？怎么使用"><a href="#十九、什么是高阶组件？怎么使用" class="headerlink" title="十九、什么是高阶组件？怎么使用"></a>十九、什么是高阶组件？怎么使用</h3><h3 id="二十、setState是同步还是异步"><a href="#二十、setState是同步还是异步" class="headerlink" title="二十、setState是同步还是异步"></a>二十、setState是同步还是异步</h3><h3 id="二十一、怎么捕捉异常"><a href="#二十一、怎么捕捉异常" class="headerlink" title="二十一、怎么捕捉异常"></a>二十一、怎么捕捉异常</h3><h3 id="二十二、全选反选怎么实现"><a href="#二十二、全选反选怎么实现" class="headerlink" title="二十二、全选反选怎么实现"></a>二十二、全选反选怎么实现</h3><h3 id="二十三、hash和history模式的区别"><a href="#二十三、hash和history模式的区别" class="headerlink" title="二十三、hash和history模式的区别"></a>二十三、hash和history模式的区别</h3><h4 id="1、原理不同"><a href="#1、原理不同" class="headerlink" title="1、原理不同"></a>1、原理不同</h4><blockquote>
+<p>hash模式的实现原理是通过监听hashChange事件来实现的。history模式是通过调用 history.pushState方法(或者replaceState) 并且 监听popstate事件来实现的。history.pushState会追加历史记录，并更换地址栏地址信息，但是页面不会刷新，需要手动调用地址变化之后的处理函数，并在处理函数内部决定跳转逻辑；监听popstate事件是为了响应浏览器的前进后退功能。</p>
+</blockquote>
+<h4 id="2、表现不同"><a href="#2、表现不同" class="headerlink" title="2、表现不同"></a>2、表现不同</h4><blockquote>
+<p>hash模式会在地址栏中有#号，而history模式没有；同时由于history模式的实现原理用到H5的新特性，所以它对浏览器的兼容性有要求(IE &gt;= 10)。</p>
+</blockquote>
+<h4 id="3、history特点"><a href="#3、history特点" class="headerlink" title="3、history特点"></a>3、history特点</h4><blockquote>
+<p>history模式开发的SPA项目，需要服务器端做额外的配置，否则会出现刷新白屏（链接分享失效）。原因是页面刷新时，浏览器会向服务器真的发出对这个地址的请求，而这个文件资源又不存在，所以就报404。处理方式就由后端做一个保底映射:所有的请求全部拦截到index.html上。</p>
+</blockquote>
+<h4 id="4、history模式代码实现"><a href="#4、history模式代码实现" class="headerlink" title="4、history模式代码实现"></a>4、history模式代码实现</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h4</span>&gt;</span>使用 h5 实现前端路由<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">onclick</span>=<span class="string">&quot;home()&quot;</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">onclick</span>=<span class="string">&quot;message()&quot;</span>&gt;</span>消息<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">onclick</span>=<span class="string">&quot;mine()&quot;</span>&gt;</span>我的<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;showContent&quot;</span> <span class="attr">style</span>=<span class="string">&quot;height:240px;width:200px;background-color:red&quot;</span>&gt;</span></span><br><span class="line">            home</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">function</span> <span class="title function_">home</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 添加到历史记录栈中</span></span></span><br><span class="line"><span class="language-javascript">            history.<span class="title function_">pushState</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">name</span>: <span class="string">&#x27;home&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">id</span>: <span class="number">1</span></span></span><br><span class="line"><span class="language-javascript">            &#125;, <span class="literal">null</span>, <span class="string">&quot;?page=home#index&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">showCard</span>(<span class="string">&#x27;home&#x27;</span>)</span></span><br><span class="line"><span class="language-javascript">        &#125;;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">function</span> <span class="title function_">message</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            history.<span class="title function_">pushState</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">name</span>: <span class="string">&#x27;message&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">id</span>: <span class="number">2</span></span></span><br><span class="line"><span class="language-javascript">            &#125;, <span class="literal">null</span>, <span class="string">&quot;?page=message#haha&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">showCard</span>(<span class="string">&#x27;message&#x27;</span>)</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">function</span> <span class="title function_">mine</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            history.<span class="title function_">pushState</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">id</span>: <span class="number">3</span>,</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">name</span>: <span class="string">&#x27;mine&#x27;</span></span></span><br><span class="line"><span class="language-javascript">            &#125;, <span class="literal">null</span>, <span class="string">&quot;?name=tigerchain&amp;&amp;sex=man&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">showCard</span>(<span class="string">&#x27;mine&#x27;</span>)</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 监听浏览器回退 并且刷新到指定内容</span></span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">window</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;popstate&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">var</span> content = <span class="string">&quot;&quot;</span>;</span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">if</span>(event.<span class="property">state</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">                content = event.<span class="property">state</span>.<span class="property">name</span>;</span></span><br><span class="line"><span class="language-javascript">            &#125;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(event.<span class="property">state</span>)</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;history 中的历史栈中的 name ：&quot;</span> + content)</span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">showCard</span>(content)</span></span><br><span class="line"><span class="language-javascript">        &#125;)</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 此方法和上面的方法是一毛一样的，只是两种不同的写法而已</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// window.onpopstate = function (event) &#123;</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//   var content = &quot;&quot;;</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//   if(event.state) &#123;</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//     content = event.state.name;</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//   &#125;</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//   showCard(content);</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// &#125;</span></span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">function</span> <span class="title function_">showCard</span>(<span class="params">name</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;当前的 hash 值是：&quot;</span> + location.<span class="property">hash</span>)</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;showContent&quot;</span>).<span class="property">innerHTML</span> = name;</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5、hashchange"><a href="#5、hashchange" class="headerlink" title="5、hashchange"></a>5、hashchange</h4><blockquote>
+<p>hash是指url中#后面的部门，这部分在服务器会被自动忽略，但是在浏览器中可以通过location.hash来获取。此方式主要是用到了onhashchange事件，这个事件可以监听url中的hash值变化，以此来进行一些DOM的切换操作。<br>onhashchange事件的触发条件有:<br>a、改变url地址，在最后面增加或改变其hash值<br>b、改变location.href或location.hash<br>c、点击带有锚点的链接<br>d、浏览器前进后退可能导致hash的变化，就是两个网页地址中的hash值不同<br>实现思路：<br>当浏览器地址栏url的hash值发生变化时，就会触发onhashchange事件，这时需要通过window.location.hash可以拿到当前浏览器的url的hash值，此时的hash值是带有#的。可以根据不同的hash值执行不同的回调函数，即加载相应的组件。<br>实现方式：<br>当hash值发生变化会触发此事件<br>window.addEventListener(‘hashchange’,fn)</p>
+</blockquote>
+<h3 id="二十四、合成事件和原生事件的理解"><a href="#二十四、合成事件和原生事件的理解" class="headerlink" title="二十四、合成事件和原生事件的理解"></a>二十四、合成事件和原生事件的理解</h3><h3 id="二十五、oss上传怎么实现"><a href="#二十五、oss上传怎么实现" class="headerlink" title="二十五、oss上传怎么实现"></a>二十五、oss上传怎么实现</h3><h3 id="二十六、图片懒加载的实现方式"><a href="#二十六、图片懒加载的实现方式" class="headerlink" title="二十六、图片懒加载的实现方式"></a>二十六、图片懒加载的实现方式</h3><h3 id="二十七、react组件间的通信的方式"><a href="#二十七、react组件间的通信的方式" class="headerlink" title="二十七、react组件间的通信的方式"></a>二十七、react组件间的通信的方式</h3><h3 id="二十八、react的生命周期"><a href="#二十八、react的生命周期" class="headerlink" title="二十八、react的生命周期"></a>二十八、react的生命周期</h3> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://iamwangzhaoyu.github.io/2022/07/01/%E7%94%9F%E4%BA%A7%E5%B9%B3%E5%8F%B0%E7%9F%A5%E8%AF%86%E7%82%B9/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2022/07/01/umi%E7%AE%80%E4%BB%8B/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            umi简介
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/07/01/antdpro%E7%94%A8%E6%B3%95/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">antdpro用法</div>
+      </a>
+    
+  </nav>
+
+  
+   
+    
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2022
+        <i class="ri-heart-fill heart_icon"></i> wangzhaoyu
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/header.png" alt="富婆养生会所"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/Interview">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/my">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+</body>
+
+</html>
